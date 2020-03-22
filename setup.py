@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 version = imp.load_source('acoss._version', os.path.join('acoss', '_version.py'))
 
-with open('README.md') as file:
+with open('README.md', encoding="utf-8") as file:
     long_description = file.read()
 
 setup(
@@ -50,9 +50,9 @@ setup(
     extras_require={
         'docs': [],
         'tests': [],
-        'extra-deps': ['essentia', 
+        'extra-deps': ['essentia',
                       'madmom>=0.16.1'],
         'machine_learning': []
     },
     cmdclass={},
-)   
+)
