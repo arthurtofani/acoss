@@ -135,7 +135,7 @@ feature_dir
 ```python
 import deepdish as dd
 
-feature = dd.load("feature_file.h5")
+feature = dd.io.load("feature_file.h5")
 ```
 
 An example feature file will be in the following structure.
